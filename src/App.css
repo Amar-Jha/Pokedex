@@ -1,0 +1,143 @@
+
+body{
+    background-color: rgb(16, 16, 16);
+}
+.card{
+    position: relative;
+    height: 500px;
+    width: 100px;
+    margin: 10px;
+    top: 70px;
+    left: 145px;
+    background: none;
+    text-align: center;
+}
+.card-side.front img{
+    margin: 50px;
+    height: 130px;
+}
+.type{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.type div{
+    background-color: rgb(63, 248, 161);
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+    text-wrap: nowrap;
+}
+.base-stat{
+    margin-top: 3rem;
+}
+.stats{
+    margin-top: 10px;
+    border-radius: 16px;
+    border:1px solid black;
+}
+.abilities{
+    width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.abilities .group{
+    background-color: rgb(31 41 55);
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+    text-wrap: nowrap;
+}
+.card-side{
+    height: 450px;
+    border-radius: 16px;
+    transition: all 0.8s ease;
+    position: absolute;
+    width: 50vh;
+    padding: 10px;
+    color: #fff;
+}
+.card-side.back{
+    backface-visibility: hidden;
+}
+.card-side.front{
+    background-image: linear-gradient(43deg,#4158D0 0%,#C850C0 46%,#FFCC70 100%);
+}
+.card-side.back{
+    background-image: linear-gradient(160deg,#0093E9 0%,#80D0C7 100%);
+    transform: rotateY(-180deg);
+}
+.card:hover .card-side.back{
+    transform: rotateY(0deg);
+}
+.card:hover .card-side.front{
+    transform: rotateY(180deg);
+}
+.search{
+    border: 1px solid black;
+    width: 40%;
+
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 3px;
+    display: flex;
+}
+.left-side,.right-side{
+flex-basis: 50%;
+}
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap: 5rem;
+}
+.icon{
+display: inline-block;
+align-items: center;
+margin-top: 5px;
+width: 150px;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.circleicon{
+    height: 90px;
+  width: 90px;
+  background-color: #bbb;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: 8px;
+}
+.loading{
+    height:50px;
+}
+.btn{
+display: flex;
+}
+.btn button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(31 41 55);
+    border-radius: 8px;
+}
+.details{
+    color: white;
+    border: white;
+}
